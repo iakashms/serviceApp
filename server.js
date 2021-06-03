@@ -10,7 +10,6 @@ const config = require('./config');
 const auth = require('./middleware/auth');
 
 const connection_url = "mongodb://localhost:27017/serviceApp"
-
 // const connection_url = `mongodb+srv://${config.env.MONGO_USER}:${config.env.MONGO_PASSWORD}@cluster0.b1yrq.mongodb.net/${config.env.MONGO_DB_NAME}?retryWrites=true&w=majority`
 
 app.use(auth)
